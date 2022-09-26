@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <title class="text-center">Christopher Adasme Cortes</title>
+        <div id="cabeza">
+            <section  class="zone padding-x-0">
+                <strong id="tituloPag">Web Christopher Adasme</strong>
+                <div>
+                    <a class="padding-x-0" href="http://localhost:63342/javaScriptDOM/index.html?_ijt=g2en08p1cpnpn29ah61unac36#page-1"> Inicio </a>
+                    <a clas="padding-x-0" href="/videosView/vistaVideos.html"> Videos </a>
+                    <a class="padding-x-0" href="/Animaciones/animacionesVista.html"> Animaciones</a>
+                </div>
+                <div>
+                    <a class="padding-x-0" href="https://www.instagram.com/chrisneiil/"> Instagram </a>
+                    <a clas="padding-x-0" href="https://www.youtube.com/channel/UCBq4x-Fd7-NJ3_Jro6mfoWA"> Youtube </a>
+                    <a class="padding-x-0" href="https://github.com/chrisneiil">GitHub Profile</a>
+                </div>
+            </section>
+        </div>
+    </head>
+    <body>
+
+    <section class="flex-box">
+
+        <section >
+                <div class="flex-box">
+                    <div class="padding-x-0">
+
+                        <ul class="animate__pulse caja-info-personal" id="lista">
+                            Cosas sobre mi
+                        </ul>
+                    </div>
+                    <div class="padding-x-0">
+                        <ul class="caja-info-personal " id="gustos">
+                            Gustos
+                        </ul>
+                    </div>
+                    <div class="padding-x-0">
+                        <ul class="caja-info-personal " id="disgustos">
+                            Disgustos
+                        </ul>
+                    </div>
+                </div>
+            <div>
+            </div>
+            <h1 class="ani">An animated element</h1>
+        </section>
+        <div class="borde">
+            <nav class="flex-box color">
+                <a href="#page-1" style="padding-left: 4px; padding-right: 4px">Sorpresa</a>
+                <a href="#page-2" style="padding-left: 4px; padding-right: 4px">Sorpresa?</a>
+                <a href="#page-3" style="padding-left: 4px; padding-right: 8px">???????</a>
+            </nav>
+            <scroll-container>
+                <scroll-page id="page-1">que esperabas, es una sorpresa que se muestra, o sea, no es una sorpresa si ya la vez xD</scroll-page>
+                <scroll-page id="page-2">
+                    porfavor no sigas bajando... te arrepentiras
+                </scroll-page>
+                <scroll-page id="page-3">
+                    <img
+                            width="400"
+                            height="300"
+                            src="https://pbs.twimg.com/media/EhvdRNqU0AA0zpU?format=jpg&name=small">
+                </scroll-page>
+            </scroll-container>
+        </div>
+    </section>
+    <script src="app.js"></script>
+    </body>
+
+    <style>
+        a {
+            color: white;
+            width: 50px;
+            text-decoration: none;
+        }
+        nav, scroll-container {
+            display: block;
+            margin:  auto;
+            text-align: center;
+        }
+        .color{
+            background-color: black;
+        }
+        scroll-container {
+            display: block;
+            width: auto;
+            height: 300px;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        }
+        scroll-page {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-size: 1em;
+        }
+        #tituloPag{
+            color: white;
+        }
+        .zone{
+            display: flex;
+            justify-content: space-between;
+        }
+        a:hover{
+            color: deepskyblue;
+        }
+        #cabeza{
+            position: fixed;
+            background-color: IndianRed;
+            height: 50px;
+
+            width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+            left: 0; /* Posicionamos la cabecera al lado izquierdo */
+            top: 0; /* Posicionamos la cabecera pegada arriba */
+            position: fixed; /* Hacemos que la cabecera tenga una posición fijo*/
+        }
+        .padding-x-0{
+            padding-top: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+        }
+        .caja-info-personal:hover{
+            background-color: white;
+            animation: background-color 2s linear 0.5s 4 normal forwards running;
+
+        }
+        .caja-info-personal{
+            background: yellowgreen;
+            border: 1px solid black;
+            width: 200px;
+        }
+        .flex-box{
+            display: flex;
+            justify-content: space-between;
+        }
+        .borde{
+            border: 1px solid black;
+        }
+        body{
+            padding-top: 50px;
+            background: rgb(214, 213, 229);
+        }
+    </style>
+</html>

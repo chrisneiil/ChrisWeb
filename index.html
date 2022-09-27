@@ -6,11 +6,10 @@
         <title class="text-center">Christopher Adasme Cortes</title>
         <div id="cabeza">
             <section  class="zone padding-x-0">
-                <strong id="tituloPag">Web Christopher Adasme</strong>
+                <strong id="tituloPag" style="font-size: 1.8rem;">Web Christopher Adasme</strong>
                 <div>
                     <a class="padding-x-0" href="http://localhost:63342/javaScriptDOM/index.html?_ijt=g2en08p1cpnpn29ah61unac36#page-1"> Inicio </a>
                     <a clas="padding-x-0" href="/videosView/vistaVideos.html"> Videos </a>
-                    <a class="padding-x-0" href="/Animaciones/animacionesVista.html"> Animaciones</a>
                 </div>
                 <div>
                     <a class="padding-x-0" href="https://www.instagram.com/chrisneiil/"> Instagram </a>
@@ -20,69 +19,89 @@
             </section>
         </div>
     </head>
+
     <body>
 
     <section class="flex-box">
+        <div class="card" style="text-align: center">
+            <img src="img/patito.jpg">
+
+            <h3 style=" color: blueviolet ; margin-top: 0px">Patito</h3>
+            <hr style="color: black; background-color: black; width:75%;" />
+            <div style="padding-bottom: 4px">
+                <button onclick="agregar_elemento()">no me des click</button>
+            </div>
+            <div id="idPatito">
+                <p style="color: black;text-align: center"> un lindo patito para alegrar el dia. </p>
+            </div>
+
+        </div>
 
         <section >
                 <div class="flex-box">
                     <div class="padding-x-0">
 
-                        <ul class="animate__pulse caja-info-personal" id="lista">
-                            Cosas sobre mi
+                        <ul class=" caja-info-personal" id="lista">
+                           <p style="margin-left: 4rem ; margin-top: 0px; margin-bottom: 0px"> Sobre mi</p>
                         </ul>
                     </div>
                     <div class="padding-x-0">
                         <ul class="caja-info-personal " id="gustos">
-                            Gustos
+                            <p style="margin-left: 4rem ; margin-top: 0px; margin-bottom: 0px"> Gustos</p>
                         </ul>
                     </div>
                     <div class="padding-x-0">
                         <ul class="caja-info-personal " id="disgustos">
-                            Disgustos
+                            <p style="margin-left: 4rem ; margin-top: 0px; margin-bottom: 0px"> Disgustos</p>
                         </ul>
                     </div>
                 </div>
             <div>
             </div>
-            <h1 class="ani">An animated element</h1>
         </section>
         <div class="borde">
-            <nav class="flex-box color">
-                <a href="#page-1" style="padding-left: 4px; padding-right: 4px">Sorpresa</a>
-                <a href="#page-2" style="padding-left: 4px; padding-right: 4px">Sorpresa?</a>
-                <a href="#page-3" style="padding-left: 4px; padding-right: 8px">???????</a>
-            </nav>
-            <scroll-container>
-                <scroll-page id="page-1">que esperabas, es una sorpresa que se muestra, o sea, no es una sorpresa si ya la vez xD</scroll-page>
-                <scroll-page id="page-2">
-                    porfavor no sigas bajando... te arrepentiras
-                </scroll-page>
-                <scroll-page id="page-3">
-                    <img
-                            width="400"
-                            height="300"
-                            src="https://pbs.twimg.com/media/EhvdRNqU0AA0zpU?format=jpg&name=small">
-                </scroll-page>
-            </scroll-container>
+
         </div>
     </section>
+    <script src="scripts.js"></script>
     <script src="app.js"></script>
     </body>
 
     <style>
+        ul{
+            font-size: 1.8rem;
+        }
+        li{
+            font-size: 1.8rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        .card {
+            border-radius: 10px;
+            background-color: #F5D1B9;
+            overflow: hidden;
+            box-shadow: 7px 7px 7px #592A08;
+        }
+        .card img{
+            width: 300px;
+            height: 200px;
+            padding-bottom: 10px;
+
+        }
         a {
             color: white;
             width: 50px;
+            font-size: 1.8rem;
             text-decoration: none;
         }
         nav, scroll-container {
             display: block;
             margin:  auto;
             text-align: center;
-        }
-        .color{
-            background-color: black;
         }
         scroll-container {
             display: block;
@@ -96,7 +115,7 @@
             align-items: center;
             justify-content: center;
             height: 100%;
-            font-size: 1em;
+            font-size: 4rem;
         }
         #tituloPag{
             color: white;
@@ -139,6 +158,8 @@
             justify-content: space-between;
         }
         .borde{
+
+            border-radius:10px;
             border: 1px solid black;
         }
         body{
